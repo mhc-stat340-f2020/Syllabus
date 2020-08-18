@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{color,soul}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{lscape}
+
+\pagestyle{fancy}
+
+\lhead{\textsc{Marie Ozanne}}
+\chead{\textsc{STAT 340: Syllabus}}
+\rhead{\textsc{Fall 2020}}
+\lfoot{}
+\cfoot{}
+%\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\title{STAT 340:\\Applied Regression Methods}
+\author{Marie Ozanne}
+\date{Fall 2020}
+
+\begin{document}
+%\maketitle
+	%\Large 
+
+\ \\
+\vspace{.01in}
+\begin{center}
+{\large STAT 340: Applied Regression Methods}
+\end{center}
+\subsection*{About the Course}
+
+\paragraph{Instructor}
+
+Marie Ozanne
+
+Email: \texttt{mozanne@mtholyoke.edu}
+
+Office: Clapp 403
+
+Office Hours: I will hold regularly scheduled office hours each week at times to be selected by you.  These times will be posted on the Moodle site.  Please do not hesitate to contact me to set up appointments for additional office hours at any time!
+
+\paragraph{Classes} \mbox{}
+The class meetings times are Monday 9:45-11:00 AM, Tuesday and Thursday 9:30-11:15 AM, Wednesday and Friday 10:15-11:15 AM. We will not always use the entirity of class for formal class time; some time will be set aside for questions. Classes will be held on Zoom - the links can be accessed on Moodle.
+
+%\textbf{Please plan to bring your laptop to class} (we'll need to have sufficient numbers to allow you to work in pairs and take advantage of the technology available to us).  Please contact me if you do not have access to a working laptop or if you forget yours; \textbf{the department has laptops available for you to use in class}.
+
+\paragraph{Course Website}
+%The course website is at \url{http://www.marievozanne.github.io/mhc-stat340-f2020/}.  
+Course materials and class forums can be accessed on Moodle. The site will be regularly updated with lecture notes and materials used in class. Lab assignments we will work through in class and homework assignments will be distributed on GitHub; links to these materials will be accessible through Moodle.
+
+\paragraph{Description}
+
+In this course, we will build on the ideas you have developed in introductory and intermediate statistics courses to develop a set of statistical methods and computational tools that can be used for common data analysis tasks in the frequentist framework.  We will take the ``applied" part of the course title seriously, focusing on working with real data sets to answer real questions.  
+
+In terms of statistical modeling, we will plan to cover the following material:
+\begin{itemize}
+  \item Review of simple and multiple linear regression; matrix formulation of regression; polynomial regression
+  \item Generalized linear models (GLMs), including general formulation, logistic, poisson, and negative binomial regression
+  \item Generalized linear mixed effects models (GLMMs)
+\item Time series
+\item Spatial modeling
+%  \item Evaluating model performance via train/test splits; cross-validation for model selection
+%  \item Regression with splines
+%  \item Non-parametric regression with K nearest neighbors
+%  \item Classification with two classes using logistic regression and K nearest neighbors
+%  \item Approaches to multiple regression with many candidate explanatory variables: variable selection, dimension reduction, and penalized estimation
+%  \item Tree-based approaches to regression and classification, including discussion of bagging (random forests) and boosting
+%  \item Generalized Additive Models (GAMs)
+\end{itemize}
+
+In terms of statistical computation, we will use R and cover the following material:
+\begin{itemize}
+  \item Data management in R's tidyverse
+  \item Data visualization with R's ggplot2
+%  \item Version control and collaboration with git and GitHub
+\end{itemize}
+
+\paragraph{Textbook}
+
+The primary text for this class will be ``Applied Regression Analysis \& Generalized Linear Models" by John Fox. This is available as a hard cover (ISBN 978-1-4522-0566-3). I may occassionally assign readings from ``An Introduction to Statistical Learning with Applications in R" by James, Witten, Hastie, and Tibshirani (available for free at \url{http://www-bcf.usc.edu/~gareth/ISL/}) and from ``R for Data Science" by Wickham and Grolemund (available in website format at \url{http://r4ds.had.co.nz/}), or other open source resources.
+
+%We will be using ``An Introduction to Statistical Learning with Applications in R" (ISLR) by James, Witten, Hastie, and Tibshirani as the primary text for the class.  This is available as a hardcover (ISBN 978-1-4614-7137-0), and a pdf of the book can be downloaded for free from the author's website at \url{http://www-bcf.usc.edu/~gareth/ISL/}.
+%A copy is on reserve at the library.
+
+%ISLR is an undergraduate-level version of ``Elements of Statistical Learning" (ESL) by Hastie, Tibshirani, and Friedman.  If you ever want more detail and mathematical depth, ESL is a great place to look.  ESL is also available for free at \url{https://web.stanford.edu/~hastie/ElemStatLearn/}.
+%
+%In addition, I will occasionally assign readings from ``R for Data Science" (R4DS) by Wickham and Grolemund, which is available for free in website format at \url{http://r4ds.had.co.nz/}.  If you wish, it is also possible to purchase a physical copy of this book.
+
+\paragraph{Time commitment}
+
+As you all know, we will be completing this class in 7.5 weeks. Typically in a regular semester, you are expected to budget approximately three out-of-class hours for every credit hour to complete readings, assignments, and homework (12 hours per week of time commitment). In the module structure, you should budget approximately six out-of-class hours for every credit hour to watch recorded lectures and complete other assignments (24 hours per week of time commitment). If you are spending more time than this on a regular basis, please check in with me.
+%While the exact time commitment for the class will vary individually and over the course of the semester, I recommend that you budget approximately three out-of-class hours for every class hour to complete the reading, assignments, and homework.  I have designed the class so that it should be feasible to satisfactorily complete the requirements with approximately twelve hours per week of time commitment.  If you are spending more time than this on a regular basis I would encourage you to check in with me.
+
+\subsection*{Policies}
+
+\paragraph{Synchronous/Asynchronous Classes}
+Classes will be delivered synchronously via Zoom 3-4 days per week (more typically 3), and usually will be a combination of discussion and group work. On the other 1-2 days, you will meet asynchronously at a pre-specified time with your assigned small group (organized by time zone) to work through labs/other activities. This is intended to give students in disparate time zones some flexibility, while still satisfying requirements for synchronous instruction. Asynchronous days will be Wednesday, and sometimes Friday.
+
+\paragraph{Attendance}
+I realize this term is going to come with challenges, likely both physical/mental health and technology related. That being said, the material will move quickly due to the compressed nature of the module and it is important that you attend virtual classes as frequently as possible. If anything happens that prevents you from attending class or working with your group for more than a day or two, please let me know as soon as possible so that we can come up with a plan to ensure your success in the class. You can go into whatever level of detail makes you feel comfortable.
+
+\paragraph{Collaboration}
+Much of this course will operate on a collaborative basis, and you are expected and encouraged to work together with a partner or in small groups to study, prepare for quizzes, complete homework assignments, and prepare presentations. However, every word that you write must be your own. Copying and pasting sentences, paragraphs, or large blocks of R code from another student is not acceptable and will receive no credit or a penalty. No interaction with 
+anyone but the instructor is allowed on any quizzes.  All students, staff and faculty are bound by the Mount Holyoke College Honor Code.
+
+To sum up: On homeworks and labs, \textbf{I want you to work together}.  \emph{But,} \textbf{you must write up your answers yourself.}
+
+Cases of dishonesty, plagiarism, etc., will be reported.
+
+\subsection*{Technology}
+
+\paragraph{Computing with R}
+
+Modern statistics can't be done without computation.  We will use the R statistical programming language in this course.  R is one of the most commonly used programming languages in academic statistics, and I use it daily; it's also very commonly used in statistics and data science positions in industry.  Knowing R is a marketable skill.  In this class, you will use R nearly every day, and for many homework problems.  I expect that you are familiar with R from previous classes, but I do not expect that you are an expert at R yet.  That said, it is imperative that you let me know if you are confused about anything we are doing in R.
+
+We will use R via RStudio; Mount Holyoke's version of RStudio Server can be accessed at \url{https://rstudio.mtholyoke.edu/}. If you are off campus, you must access the server through Mount Holyoke's VPN. You are also welcome to work locally on your own computer if you have RStudio set up; however, please make sure you have installed at least version 3.5.0 of R and the latest versions of any R libraries we use.
+
+%It will be important to \textbf{bring your laptop to class}; we will be using R nearly every day.  Much of this work will be done in pairs, but we need to ensure that there is a sufficient number of computers.  Please let me know if this presents any issues, as there are laptops available for you to borrow.
+
+%\paragraph{Version Control with Git and GitHub}
+%
+%Git is a version control system that facilitates working on coding and writing projects collaboratively, and allows you to revert your code to a previous version if you realize that you made a mistake.  Version control systems such as git are used in most modern data science and statistics positions in industry.  Part of my goal as an educator in the statistics program is to ensure that you are prepared to enter the work force, and for that reason the basic use of git is a learning objective for this course.  This means that all labs and the computational portion of homework assignments will be distributed to you in git repositories and submitted by committing and pushing the completed assignment to GitHub.  I will provide further details and walk through this process, as well as basic interaction with git, in class.  Note that we will use the graphical interface to git that is built into RStudio rather than the command line interface to git.
+
+\subsection*{Assignments}
+
+Your grade for this course will be a weighted average of scores from several components:
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{r c}
+\toprule
+Item & Weight \\
+\midrule
+Participation and Labs & 10\% \\
+%\cmidrule(r){1-2}
+%Class Debates & 5\% \\
+\cmidrule(r){1-2}
+Homework & 30\% \\
+\cmidrule(r){1-2}
+Quizzes & 5\% \\
+\cmidrule(r){1-2}
+Oral Presentation & 25\%\\
+\cmidrule(r){1-2}
+Final Paper & 30\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Participation and Labs}
+The best way to learn statistics is to do it.  This class will be built around a series of labs that we will do in class.  Although I will not grade these labs for correctness, I expect you to complete them and submit your work on Moodle.  I will occasionally look at submitted labs to see how everyone is doing and whether there are any points I need to address in class.  I am always happy to answer any questions you have about these labs. A large component of participation will come from participating in discussions and posting questions, answers, and comments in our Moodle forums (details will be given weekly).
+
+%\paragraph{Class Debates}
+%
+%Depending on the number of students enrolled in the class, we will have 2-3 ``debates" throughout the semester, where certain teams of students will be assigned positions on one of two potential analysis approaches, and the rest of the class will ``judge" the debate. These ``debates" are meant to illustrate that (1) sometimes there is more than one acceptable analysis approach, (2) analyses have different strengths and weaknesses. Each student is expected to actively participate in a debate once during the semester; they will serve as a judge during the remaining 1-2 debates. 
+
+\paragraph{Homework}
+We will have regular homework assignments to be completed outside of class. Homework assignments will be short written papers (approximately 5 pages, not including figures or references) detailing various statistical analyses for assigned real world problems/data sets. As we work through the material and homework assignments in this class, our writing and communication of statistical analyses and results will improve. To reflect this process, homework assignments will be graded in a ``scaffolded" fashion. This means that, while you will get feedback on your entire assignment, both in the form of peer review and instructor feedback, you will only be formally assessed on portions of the paper, as detailed in Table 1 for each assignment. By the time you turn in your final paper for the semester, you will be assessed on the entire paper, but you will have had plenty of practice to improve your writing along the way. See the homework section of the rubrics posted on Moodle for an assessment rubric for these assignments. \textbf{Homework will be submitted to Gradescope, and will be due on Friday of each week.}
+
+\begin{table}[H]\centering
+\begin{tabular}{l l}
+\toprule
+Assignment & Section(s) to be assessed\\
+\hline
+Paper 1 & Methods \\
+Paper 2 & Methods, Results, References \\
+Paper 3 & Methods, Results, Discussion, References \\
+Paper 4 & Introduction, Methods, Results, Discussion, References \\
+\bottomrule
+\end{tabular}
+\caption{Homework assignment assessment guide}
+\end{table}
+
+The grading on writing assignments in this class is structured such that you can learn how to write an applied statistics paper and improve your writing skills, without being heavily penalized before you have feedback on the process (Table 1). Even if you do not start out as well as you would like, this setup should allow everyone in the class to improve as statistical communicators. Due to time constraints, I will not be able to assess resubmitted work, but I am happy to answer any questions about the feedback you receive. I expect improvement over the course of the semester, which will be reflected in grades - someone who does these assignments well in the beginning and someone who is still developing, but becomes a strong writer over the course of the module could conceivably receive the same course grade.
+
+\paragraph{Late Assignments} 
+While I will post due dates for assignments, there is flexibility in these due dates, so in theory you can turn any assignment in late, without penalty. Because of the pace of a module, however, routinely turning in assignments more than three days late (which is the automatic grace period in Gradescope), will make it very difficult to keep up in the class. Homework is due on Fridays - you can take the weekend to either catch up, or get ahead, depending on how your week went.
+
+\paragraph{Quizzes}
+There will be occassional quizzes on material from posted lectures. These are low stakes assignments intended to measure comprehension. Quizzes will be administered through Gradescope. 
+
+\paragraph{Group Oral Presentations}
+There will be two group oral presentations, one in week five, and one in the last week. Students will be put into small groups and will teach us all something new, either by extending the statistical methods used in one of the homework assignments (e.g., implement a more appropriate method; compare two approaches; account for missing data), or choosing another method of interest from the textbook. Each group will put together a 30 minute oral presentation with slides and present it to the class during Week 5 of the module; each group member will be expected to present for approximately 10 minutes. Through these presentations, students will (1) investigate a new statistical method or evaluate the merit of several methods we have learned in class and highlight the strengths and weakness of these approaches; (2) hone both oral presentation and collaboration skills. While the default format for this type of presentation is likely a live virtual presentations, other formats may be acceptable if you have time and want to be creative, like recording a video presentation/instructional video. I will provide a list of possible topics, but other ideas are welcome, as long as they fall into the general framework of regression. Groups will clear their presentation choices with me no more than one week before the presentation. 
+
+%\paragraph{Final Paper} 
+%The final paper will be very similar to the homework assignments in terms of format and writing expectations. There will be a couple of possible directions to take for the final paper. One option will be to rewrite and extend a homework paper. For example, you might consider how to deal with missing data in your final paper, where you excluded it in your homework paper. There are many other possibilities. A second option is to write an entirely new paper, with a data set that you choose yourself, and apply relevant methods to answer a question you come up with yourself. Should you choose this second option, I highly recommend that you meet with me to discuss your intended data set/question(s) by the fourth week of the module so there is plenty of time to address concerns. It would be best to have two data sets/questions in mind in case your first choice is not appropriate for some reason. More details will be posted about the final project, including instructions for peer review, by the fourth week of the module.
+
+%A large component of the course will be a project which will be presented to your classmates.
+%Briefly, this project will entail application of a statistical model beyond multiple regression to a data set of your choosing and/or a simulation study to compare performance of two chosen statistical models.
+%A separate handout will provide additional details.
+
+%\paragraph{Grading}
+%When grading your written work, I am looking for solutions that are technically correct and reasoning that is clearly explained.  \emph{Numerically correct answers, alone, are not sufficient} on homework, tests or quizzes.  Neatness and organization are valued, with brief, clear answers that explain your thinking.  If I cannot read or follow your work, I cannot give you full credit for it.
+
+
+%\paragraph{Oral Presentation}
+
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{cl}
+%\multicolumn{2}{c}{}\\
+%\toprule
+%4 & Explanation \\
+%\hline
+%3 & Explanation \\
+%\hline
+%2 & Explanation \\
+%\hline
+%1 & Explanation \\
+%\hline 
+%0 & Discussion section is missing. \\
+%\bottomrule
+%\end{tabular}
+%\end{table}
+
+%\paragraph{Final Paper}
+
+%{\textsc{Accommodations}}
+\subsection*{Accommodations}
+
+\paragraph{Academic Accommodations} AccessAbility Services is the office on campus that determines academic accommodations for students with disabilities. If you need official accommodations through AccessAbility Services, you have a right to have these met and kept confidential. Please contact AccessAbility Services, located in Mary Lyon Hall 3rd Floor, at 413-538-2634 or accessability-services@mtholyoke.edu. If you are eligible for academic accommodations, you will be provided with an accommodation letter. Once you receive your accommodation letter, I would like to meet with you and discuss these approved accommodations and our class. For more information on who might be eligible for accommodations and the application process please see the AccessAbility Services website (\url{www.mtholyoke.edu/accessability}).
+
+\paragraph{Religious Accommodations} In support of our religiously diverse student population, students may miss a class, obtain an extension on an assignment, or reschedule an exam if there is a conflict with a religious high holiday or observance. Students should \textbf{notify me at the beginning of the module if a religious observance will require special accommodation}. 
+
+\paragraph{Audio/Visual Recording Policy} To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor/instructor or without a letter from AccessAbility Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by the student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the Mount Holyoke Honor Code and academic regulations and will result in disciplinary action.
+
+
+\end{document}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
